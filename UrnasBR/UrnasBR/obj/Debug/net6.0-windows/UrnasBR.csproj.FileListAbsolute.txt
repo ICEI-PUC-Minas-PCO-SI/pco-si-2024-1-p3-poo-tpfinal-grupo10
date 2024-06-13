@@ -1,0 +1,40 @@
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\bin\Debug\net6.0-windows\UrnasBR.exe
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\bin\Debug\net6.0-windows\UrnasBR.deps.json
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\bin\Debug\net6.0-windows\UrnasBR.runtimeconfig.json
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\bin\Debug\net6.0-windows\UrnasBR.dll
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\bin\Debug\net6.0-windows\UrnasBR.pdb
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.csproj.AssemblyReference.cache
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.Form1.resources
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.csproj.GenerateResource.cache
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.AssemblyInfoInputs.cache
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.AssemblyInfo.cs
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.csproj.CoreCompileInputs.cache
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.dll
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\refint\UrnasBR.dll
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.pdb
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.genruntimeconfig.cache
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\ref\UrnasBR.dll
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.cadastroPartido.resources
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.cadastroCandidato.resources
+C:\Users\vinic\OneDrive\Área de Trabalho\FACULDADE\Faculdade 3º periodo\POO\Urna\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.CadastroEleicoes.resources
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\bin\Debug\net6.0-windows\UrnasBR.exe
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\bin\Debug\net6.0-windows\UrnasBR.deps.json
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\bin\Debug\net6.0-windows\UrnasBR.runtimeconfig.json
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\bin\Debug\net6.0-windows\UrnasBR.dll
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\bin\Debug\net6.0-windows\UrnasBR.pdb
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.csproj.AssemblyReference.cache
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.cadastroCandidato.resources
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.CadastroEleicoes.resources
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.CadastroPartido.resources
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.Form1.resources
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.csproj.GenerateResource.cache
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.AssemblyInfoInputs.cache
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.AssemblyInfo.cs
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.csproj.CoreCompileInputs.cache
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.dll
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\refint\UrnasBR.dll
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.pdb
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.genruntimeconfig.cache
+C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\ref\UrnasBR.dll

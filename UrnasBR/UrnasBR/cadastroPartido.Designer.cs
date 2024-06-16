@@ -30,10 +30,10 @@
         {
             System.Windows.Forms.Button btnVoltarMenu;
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.nomePartido = new System.Windows.Forms.TextBox();
+            this.presidPartido = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.siglaPartido = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCadastrarPartido = new System.Windows.Forms.Button();
             btnVoltarMenu = new System.Windows.Forms.Button();
@@ -60,19 +60,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome do partido";
             // 
-            // textBox1
+            // nomePartido
             // 
-            this.textBox1.Location = new System.Drawing.Point(283, 116);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 23);
-            this.textBox1.TabIndex = 1;
+            this.nomePartido.Location = new System.Drawing.Point(283, 116);
+            this.nomePartido.Name = "nomePartido";
+            this.nomePartido.Size = new System.Drawing.Size(220, 23);
+            this.nomePartido.TabIndex = 1;
             // 
-            // textBox2
+            // presidPartido
             // 
-            this.textBox2.Location = new System.Drawing.Point(283, 240);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(220, 23);
-            this.textBox2.TabIndex = 3;
+            this.presidPartido.Location = new System.Drawing.Point(283, 240);
+            this.presidPartido.Name = "presidPartido";
+            this.presidPartido.Size = new System.Drawing.Size(220, 23);
+            this.presidPartido.TabIndex = 3;
             // 
             // label2
             // 
@@ -83,12 +83,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Presidente do Partido";
             // 
-            // textBox3
+            // siglaPartido
             // 
-            this.textBox3.Location = new System.Drawing.Point(283, 180);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(220, 23);
-            this.textBox3.TabIndex = 5;
+            this.siglaPartido.Location = new System.Drawing.Point(283, 180);
+            this.siglaPartido.Name = "siglaPartido";
+            this.siglaPartido.Size = new System.Drawing.Size(220, 23);
+            this.siglaPartido.TabIndex = 5;
             // 
             // label3
             // 
@@ -120,11 +120,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(btnVoltarMenu);
             this.Controls.Add(this.btnCadastrarPartido);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.siglaPartido);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.presidPartido);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nomePartido);
             this.Controls.Add(this.label1);
             this.Name = "CadastroPartido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -138,10 +138,10 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox nomePartido;
+        private TextBox presidPartido;
         private Label label2;
-        private TextBox textBox3;
+        private TextBox siglaPartido;
         private Label label3;
         private Button btnCadastrarPartido;
     }

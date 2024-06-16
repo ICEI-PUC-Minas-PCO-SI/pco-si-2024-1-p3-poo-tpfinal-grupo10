@@ -35,11 +35,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.naturCandidato = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.partCandidato = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cargoCandidato = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnCadastrarCandidato = new System.Windows.Forms.Button();
+            this.selectPartido = new System.Windows.Forms.ComboBox();
+            this.selectCargo = new System.Windows.Forms.ComboBox();
             btnVoltarMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -75,6 +75,7 @@
             // 
             this.cpfCandidato.Location = new System.Drawing.Point(287, 112);
             this.cpfCandidato.Name = "cpfCandidato";
+            this.cpfCandidato.PlaceholderText = "Somente numeros";
             this.cpfCandidato.Size = new System.Drawing.Size(220, 23);
             this.cpfCandidato.TabIndex = 3;
             // 
@@ -103,13 +104,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Naturalidade";
             // 
-            // partCandidato
-            // 
-            this.partCandidato.Location = new System.Drawing.Point(287, 229);
-            this.partCandidato.Name = "partCandidato";
-            this.partCandidato.Size = new System.Drawing.Size(220, 23);
-            this.partCandidato.TabIndex = 7;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -118,13 +112,6 @@
             this.label4.Size = new System.Drawing.Size(45, 15);
             this.label4.TabIndex = 6;
             this.label4.Text = "Partido";
-            // 
-            // cargoCandidato
-            // 
-            this.cargoCandidato.Location = new System.Drawing.Point(287, 294);
-            this.cargoCandidato.Name = "cargoCandidato";
-            this.cargoCandidato.Size = new System.Drawing.Size(220, 23);
-            this.cargoCandidato.TabIndex = 9;
             // 
             // label5
             // 
@@ -148,17 +135,40 @@
             this.btnCadastrarCandidato.UseVisualStyleBackColor = false;
             this.btnCadastrarCandidato.Click += new System.EventHandler(this.btnCadastrarCandidato_Click);
             // 
+            // selectPartido
+            // 
+            this.selectPartido.FormattingEnabled = true;
+            this.selectPartido.Location = new System.Drawing.Point(287, 229);
+            this.selectPartido.Name = "selectPartido";
+            this.selectPartido.Size = new System.Drawing.Size(220, 23);
+            this.selectPartido.TabIndex = 12;
+            // 
+            // selectCargo
+            // 
+            this.selectCargo.FormattingEnabled = true;
+            this.selectCargo.Items.AddRange(new object[] {
+            "Presidente",
+            "Governador",
+            "Prefeito",
+            "Deputado Estadual",
+            "Deputado Federal",
+            "Vereador"});
+            this.selectCargo.Location = new System.Drawing.Point(287, 294);
+            this.selectCargo.Name = "selectCargo";
+            this.selectCargo.Size = new System.Drawing.Size(220, 23);
+            this.selectCargo.TabIndex = 13;
+            // 
             // cadastroCandidato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.selectCargo);
+            this.Controls.Add(this.selectPartido);
             this.Controls.Add(btnVoltarMenu);
             this.Controls.Add(this.btnCadastrarCandidato);
-            this.Controls.Add(this.cargoCandidato);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.partCandidato);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.naturCandidato);
             this.Controls.Add(this.label3);
@@ -183,10 +193,10 @@
         private Label label2;
         private TextBox naturCandidato;
         private Label label3;
-        private TextBox partCandidato;
         private Label label4;
-        private TextBox cargoCandidato;
         private Label label5;
         private Button btnCadastrarCandidato;
+        private ComboBox selectPartido;
+        private ComboBox selectCargo;
     }
 }

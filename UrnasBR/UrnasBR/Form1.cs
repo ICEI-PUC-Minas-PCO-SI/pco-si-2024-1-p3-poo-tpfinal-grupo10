@@ -55,12 +55,20 @@ namespace UrnasBR
 
         private void btnVisualizarPartidos_Click(object sender, EventArgs e)
         {
-
+            visualizarPartidos tela = new visualizarPartidos();
+            this.Close();
+            MenuPrincipal = new Thread(abrirVisualizarPartidos);
+            MenuPrincipal.SetApartmentState(ApartmentState.STA);
+            MenuPrincipal.Start();
         }
 
         private void btnVisualizarCandidatos_Click(object sender, EventArgs e)
         {
-
+            visualizarCandidatos tela = new visualizarCandidatos();
+            this.Close();
+            MenuPrincipal = new Thread(abrirVisualizarCandidatos);
+            MenuPrincipal.SetApartmentState(ApartmentState.STA);
+            MenuPrincipal.Start();
         }
 
         //Este trecho são as chamadas para abrir as telas do menu
@@ -78,16 +86,16 @@ namespace UrnasBR
         {
             Application.Run(new CadastroEleicoes());
         }
-        /*
-        private void abrirCadastroPartido(object obj)
+        
+        private void abrirVisualizarPartidos(object obj)
         {
-            Application.Run(new CadastroPartido());
+            Application.Run(new visualizarPartidos());
         }
-
-        private void abrirCadastroPartido(object obj)
+        
+        private void abrirVisualizarCandidatos(object obj)
         {
-            Application.Run(new CadastroPartido());
+            Application.Run(new visualizarCandidatos());
         }
-        */
+        
     }
 }

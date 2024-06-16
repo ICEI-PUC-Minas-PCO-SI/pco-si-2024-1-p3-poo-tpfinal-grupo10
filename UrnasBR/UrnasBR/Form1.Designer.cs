@@ -111,7 +111,7 @@
             this.btnVisualizarPartidos.Name = "btnVisualizarPartidos";
             this.btnVisualizarPartidos.Size = new System.Drawing.Size(223, 58);
             this.btnVisualizarPartidos.TabIndex = 5;
-            this.btnVisualizarPartidos.Text = "Visaualizar Partidos";
+            this.btnVisualizarPartidos.Text = "Visualizar Partidos";
             this.btnVisualizarPartidos.UseVisualStyleBackColor = false;
             this.btnVisualizarPartidos.Click += new System.EventHandler(this.btnVisualizarPartidos_Click);
             // 

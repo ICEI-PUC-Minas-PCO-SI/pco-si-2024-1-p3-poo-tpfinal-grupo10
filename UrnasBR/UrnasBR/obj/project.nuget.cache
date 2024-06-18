@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ol3DE72Lv04Gs4+v997Wkf4vCTLcsSXkswRiGxr9GjqiIV/cZRkUagyWDKdZLYMIKGgDCIEGbVeORybWqH/5Xg==",
+  "dgSpecHash": "T3IVHYfX0k6v34Qb6+Ev9HwuxI630XpkxeMxZIKOxn7BalvlIRvCyliss8QOSPxq9vO8mLcyFf8AL+zUO8NE7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\FACULDADE\\Faculdade 3º periodo\\POO\\Urna\\UrnasBR\\UrnasBR\\UrnasBR.csproj",
+  "projectFilePath": "C:\\Users\\vinic\\source\\repos\\ICEI-PUC-Minas-PCO-SI\\pco-si-2024-1-p3-poo-tpfinal-grupo10\\UrnasBR\\UrnasBR\\UrnasBR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vinic\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\vinic\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",

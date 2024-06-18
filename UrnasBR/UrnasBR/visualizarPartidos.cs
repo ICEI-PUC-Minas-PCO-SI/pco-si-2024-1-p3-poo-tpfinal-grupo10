@@ -90,9 +90,25 @@ namespace UrnasBR
             VisualizarPartidos.Start();
         }
 
+        private void btnEditarPartido_Click(object sender, EventArgs e)
+        {
+            editarPartido tela = new editarPartido();
+            this.Close();
+            VisualizarPartidos = new Thread(abrirEditarPartido);
+            VisualizarPartidos.SetApartmentState(ApartmentState.STA);
+            VisualizarPartidos.Start();
+        }
+
         private void abrirMenuPrincipal(object obj)
         {
             Application.Run(new Form1());
         }
+
+        private void abrirEditarPartido(object obj)
+        {
+            Application.Run(new editarPartido(partido));
+        }
+
+
     }
 }

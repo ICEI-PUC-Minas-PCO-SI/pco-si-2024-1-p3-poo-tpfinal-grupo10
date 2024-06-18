@@ -30,10 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.viewPartidos = new System.Windows.Forms.ListView();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnVoltar = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ExcluirMouse = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnEditarPartido = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,9 +48,23 @@
             this.viewPartidos.UseCompatibleStateImageBehavior = false;
             this.viewPartidos.SelectedIndexChanged += new System.EventHandler(this.viewPartidos_SelectedIndexChanged);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ExcluirMouse});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(151, 26);
+            // 
+            // ExcluirMouse
+            // 
+            this.ExcluirMouse.Name = "ExcluirMouse";
+            this.ExcluirMouse.Size = new System.Drawing.Size(150, 22);
+            this.ExcluirMouse.Text = "Excluir Partido";
+            this.ExcluirMouse.Click += new System.EventHandler(this.ExcluirMouse_Click);
+            // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(368, 367);
+            this.btnExcluir.Location = new System.Drawing.Point(240, 367);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 1;
@@ -67,19 +82,15 @@
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // contextMenuStrip1
+            // btnEditarPartido
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ExcluirMouse});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(151, 26);
-            // 
-            // ExcluirMouse
-            // 
-            this.ExcluirMouse.Name = "ExcluirMouse";
-            this.ExcluirMouse.Size = new System.Drawing.Size(150, 22);
-            this.ExcluirMouse.Text = "Excluir Partido";
-            this.ExcluirMouse.Click += new System.EventHandler(this.ExcluirMouse_Click);
+            this.btnEditarPartido.Location = new System.Drawing.Point(492, 367);
+            this.btnEditarPartido.Name = "btnEditarPartido";
+            this.btnEditarPartido.Size = new System.Drawing.Size(75, 23);
+            this.btnEditarPartido.TabIndex = 3;
+            this.btnEditarPartido.Text = "Editar";
+            this.btnEditarPartido.UseVisualStyleBackColor = true;
+            this.btnEditarPartido.Click += new System.EventHandler(this.btnEditarPartido_Click);
             // 
             // visualizarPartidos
             // 
@@ -87,6 +98,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEditarPartido);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.viewPartidos);
@@ -105,5 +117,6 @@
         private Button btnVoltar;
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem ExcluirMouse;
+        private Button btnEditarPartido;
     }
 }

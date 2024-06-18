@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\FACULDADE\\Faculdade 3º periodo\\POO\\Urna\\UrnasBR\\UrnasBR\\UrnasBR.csproj": {}
+    "C:\\Users\\vinic\\source\\repos\\ICEI-PUC-Minas-PCO-SI\\pco-si-2024-1-p3-poo-tpfinal-grupo10\\UrnasBR\\UrnasBR\\UrnasBR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\FACULDADE\\Faculdade 3º periodo\\POO\\Urna\\UrnasBR\\UrnasBR\\UrnasBR.csproj": {
+    "C:\\Users\\vinic\\source\\repos\\ICEI-PUC-Minas-PCO-SI\\pco-si-2024-1-p3-poo-tpfinal-grupo10\\UrnasBR\\UrnasBR\\UrnasBR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\FACULDADE\\Faculdade 3º periodo\\POO\\Urna\\UrnasBR\\UrnasBR\\UrnasBR.csproj",
+        "projectUniqueName": "C:\\Users\\vinic\\source\\repos\\ICEI-PUC-Minas-PCO-SI\\pco-si-2024-1-p3-poo-tpfinal-grupo10\\UrnasBR\\UrnasBR\\UrnasBR.csproj",
         "projectName": "UrnasBR",
-        "projectPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\FACULDADE\\Faculdade 3º periodo\\POO\\Urna\\UrnasBR\\UrnasBR\\UrnasBR.csproj",
+        "projectPath": "C:\\Users\\vinic\\source\\repos\\ICEI-PUC-Minas-PCO-SI\\pco-si-2024-1-p3-poo-tpfinal-grupo10\\UrnasBR\\UrnasBR\\UrnasBR.csproj",
         "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\FACULDADE\\Faculdade 3º periodo\\POO\\Urna\\UrnasBR\\UrnasBR\\obj\\",
+        "outputPath": "C:\\Users\\vinic\\source\\repos\\ICEI-PUC-Minas-PCO-SI\\pco-si-2024-1-p3-poo-tpfinal-grupo10\\UrnasBR\\UrnasBR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",

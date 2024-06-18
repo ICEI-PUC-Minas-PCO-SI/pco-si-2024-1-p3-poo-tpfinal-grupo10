@@ -13,7 +13,13 @@
     <Compile Update="editarCandidato.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="editarPartido.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="selecionarCargo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="visualizarCandidatos.cs">

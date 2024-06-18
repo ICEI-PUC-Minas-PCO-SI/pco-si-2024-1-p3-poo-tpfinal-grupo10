@@ -39,5 +39,20 @@ namespace UrnasBR
         {
             return id;
         }
+
+        public string getNomePartido()
+        {
+            return nomePartido;
+        }
+
+        public string getSigla()
+        {
+            return siglaPartido;
+        }
+
+        public string getPresidente()
+        {
+            return nomePresidente;
+        }
     }
 }

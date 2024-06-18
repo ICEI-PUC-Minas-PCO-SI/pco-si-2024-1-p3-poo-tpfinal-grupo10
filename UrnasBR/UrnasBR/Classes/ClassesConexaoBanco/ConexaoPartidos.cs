@@ -55,6 +55,15 @@ namespace UrnasBR.Classes.ClassesConexaoBanco
             FecharConexao();
         }
 
+        public void Editar(Partido _partido,string _nomePartido,string _siglaPartido,string _nomePresidente)
+        {
+            string sql = $"UPDATE partidos SET nome_partido = '{_nomePartido}',sigla = '{_siglaPartido}', presidente_partido = '{_nomePresidente}' WHERE id = {_partido.getId()};";
+            AbrirConexao();
+            MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
+            comando.ExecuteReader();
+            FecharConexao();
+        }
+
         public void Excluir(Partido partido)
         {
             AbrirConexao();

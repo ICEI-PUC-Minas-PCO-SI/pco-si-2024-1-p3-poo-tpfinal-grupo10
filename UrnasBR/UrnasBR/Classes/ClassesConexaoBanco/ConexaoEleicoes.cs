@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace UrnasBR.Classes.ClassesConexaoBanco
 {
@@ -24,8 +25,30 @@ namespace UrnasBR.Classes.ClassesConexaoBanco
         }
         public void Inserir(string _nomeEleicao,string _cargoEleicao, int[]_candidato)
         {
-             
-            string sql = $"INSERT INTO eleicoes(nome_eleicao,id_cargo,candidato1,candidato2,candidato3,candidato4,candidato5)VALUES('{_nomeEleicao}',{conferirCargo(_cargoEleicao)},{_candidato[0]},{_candidato[1]},{_candidato[2]},{_candidato[3]},{_candidato[4]});";
+            string sql = $"INSERT INTO eleicoes(nome_eleicao,id_cargo)VALUES('{_nomeEleicao}',{conferirCargo(_cargoEleicao)});";
+            AbrirConexao();
+            MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
+            comando.ExecuteReader();
+            FecharConexao();
+            InserirTabelaVotos(_nomeEleicao,conferirCargo(_cargoEleicao),_candidato);
+        }
+
+        //Esta função é pra adicionar os candidatos na tabela de votos
+        private void InserirTabelaVotos(string _nomeEleicao,int _cargoEleicao, int[]_candidato)
+        {
+            for(int i = 0; i < _candidato.Length; i++)
+            {
+                string sql = $"INSERT INTO votos(id_eleicao,id_candidato)VALUES({ConferirEleicao(_nomeEleicao)},{_candidato[i]});";
+                AbrirConexao();
+                MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
+                comando.ExecuteReader();
+                FecharConexao();
+            }
+        }
+
+        public void InserirVotos(int _idEleicao,int _id_candidato,int _quantVotos)
+        {
+            string sql = $"UPDATE votos set quant_votos = {_quantVotos} where id_eleicao = {_idEleicao} and id_candidato = {_id_candidato}";
             AbrirConexao();
             MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
             comando.ExecuteReader();
@@ -84,6 +107,31 @@ namespace UrnasBR.Classes.ClassesConexaoBanco
             FecharConexao();
         }
 
+        public void Buscar(ListView _view)
+        {
+            AbrirConexao();
+            string sql = $"select * from eleicoes;";
+            MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
+            MySqlDataReader reader = comando.ExecuteReader();
+            _view.Items.Clear();
+            //Este é o trecho de leitura no banco de dados
+            while (reader.Read())
+            {
+                string[] row =
+                {
+                    reader.GetInt32(0).ToString(),
+                    reader.GetString(1),
+                    reader.GetInt32(2).ToString(),
+                };
+
+                row[2] = conferirCargo(reader.GetInt32(2));
+
+                var linha_lista = new ListViewItem(row);
+                _view.Items.Add(linha_lista);
+            }
+            FecharConexao();
+        }
+
         private string conferirPartido(int _partido)
         {
             string sql = $"SELECT nome_partido FROM partidos WHERE id = {_partido};";
@@ -137,12 +185,56 @@ namespace UrnasBR.Classes.ClassesConexaoBanco
             return 0;
         }
 
-        public string ConferirCargoCandidato(string _cargo)
+        private string conferirCargo(int _cargo)
         {
-            //AbrirConexao();
-            //string sql = $"";
-            return "ola";
+            string sql = $"SELECT descricao_cargo FROM cargos WHERE id_cargo = '{_cargo}';";
+            AbrirConexao();
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
+                MySqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    string cargo = reader.GetString(0);
+                    return cargo;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                FecharConexao();
+            }
 
+            return "";
+        }
+
+        private int ConferirEleicao(string _nomeEleicao)
+        {
+            string sql = $"SELECT id_eleicao FROM eleicoes WHERE nome_eleicao = '{_nomeEleicao}';";
+            AbrirConexao();
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
+                MySqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    int eleicao = reader.GetInt32(0);
+                    return eleicao;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                FecharConexao();
+            }
+
+            return 0;
         }
 
         public void Editar()

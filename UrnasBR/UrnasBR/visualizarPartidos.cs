@@ -108,7 +108,5 @@ namespace UrnasBR
         {
             Application.Run(new editarPartido(partido));
         }
-
-
     }
 }

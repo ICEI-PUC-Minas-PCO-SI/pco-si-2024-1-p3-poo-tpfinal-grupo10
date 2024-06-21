@@ -78,8 +78,72 @@ namespace UrnasBR.Classes.ClassesConexaoBanco
             FecharConexao();
         }
 
+        public void BuscarCandidatosEleicao(ListView _view, Eleicoes eleicao)
+        {
+            AbrirConexao();
+            string sql = $"select candidatos.id_candidato,nome_candidato,partido_candidato,votos.quant_votos from candidatos join votos on candidatos.id_candidato = votos.id_candidato where votos.id_eleicao = {eleicao.getId()};";
+            MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
+            MySqlDataReader reader = comando.ExecuteReader();
+            _view.Items.Clear();
 
-        public void Editar(Candidato candidato,string _nomeCandidato, string _cpfCandidato, string _natuCandidato, string _partCandidato, string _cargoCandidato)
+            //Este é o trecho de leitura no banco de dados
+            while (reader.Read())
+            {
+                string[] row =
+                {
+                    reader.GetInt32(0).ToString(),
+                    reader.GetString(1),
+                    reader.GetInt32(2).ToString(),
+                    reader.GetInt32(3).ToString()
+                };
+
+                row[2] = conferirPartido(reader.GetInt32(2));
+
+                var linha_lista = new ListViewItem(row);
+                _view.Items.Add(linha_lista);
+            }
+            FecharConexao();
+        }
+
+        //Esta função busca os dados do candidato eleito
+        public void BuscarDadosEleicao(TextBox _nomeCandidato, TextBox _partidoCandidato, TextBox _quantVotos, Eleicoes _eleicao)
+        {
+            AbrirConexao();
+            string sql = $"SELECT id_candidato, quant_votos FROM votos v INNER JOIN (SELECT MAX(quant_votos) AS maior_votos FROM votos) mv ON v.quant_votos = mv.maior_votos where id_eleicao = {_eleicao.getId()};";
+            MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            while (reader.Read())
+            {
+                _nomeCandidato.Text = verificarCandidato(reader.GetInt32(0), ref _partidoCandidato);
+                _quantVotos.Text = reader.GetInt32(1).ToString();
+            }
+
+            FecharConexao();
+        }
+
+        public void BuscarDadosEleicao(Eleicoes _eleicao, TextBox[] _campos)
+        {
+            AbrirConexao();
+            string sql = $"select quant_votos from votos where id_eleicao = {_eleicao.getId()} and id_candidato between 1 and 2;";
+            MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
+            MySqlDataReader reader = comando.ExecuteReader();
+            int i = 0;
+            while (reader.Read())
+            {
+                _campos[i].Text = reader.GetInt32(0).ToString();
+                i++;
+            }
+
+            FecharConexao();
+        }
+
+
+
+
+
+
+        public void Editar(Candidato candidato, string _nomeCandidato, string _cpfCandidato, string _natuCandidato, string _partCandidato, string _cargoCandidato)
         {
             string sql = $"UPDATE candidatos SET nome_candidato = '{_nomeCandidato}',cpf_candidato = '{_cpfCandidato}',naturalidade_candidato = '{_natuCandidato}',partido_candidato = {conferirPartido(_partCandidato)},cargo_candidato = {conferirCargo(_cargoCandidato)} WHERE id_candidato = {candidato.getId()};";
             AbrirConexao();
@@ -202,5 +266,22 @@ namespace UrnasBR.Classes.ClassesConexaoBanco
 
             return "-";
         }
+
+        private string verificarCandidato(int _idCandidato, ref TextBox _partidoCandidato)
+        {
+            AbrirConexao();
+            string sql = $"select nome_candidato,partido_candidato from candidatos where id_candidato = {_idCandidato};";
+            MySqlCommand comando = new MySqlCommand(sql, ConexaoBanco);
+            MySqlDataReader reader = comando.ExecuteReader();
+            while (reader.Read())
+            {
+                _partidoCandidato.Text = conferirPartido(reader.GetInt32(1));
+                return reader.GetString(0);
+            }
+            FecharConexao();
+            return "Não encontrado";
+
+        }
     }
+
 }

@@ -82,3 +82,6 @@ C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-g
 C:\Users\vinic\Source\Repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\ref\UrnasBR.dll
 C:\Users\vinic\source\repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.selecionarCargo.resources
 C:\Users\vinic\source\repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.editarPartido.resources
+C:\Users\vinic\source\repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.inserirVotos.resources
+C:\Users\vinic\source\repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.visualizarEleicoes.resources
+C:\Users\vinic\source\repos\ICEI-PUC-Minas-PCO-SI\pco-si-2024-1-p3-poo-tpfinal-grupo10\UrnasBR\UrnasBR\obj\Debug\net6.0-windows\UrnasBR.Classes.visualizarEleicao.resources

@@ -45,12 +45,20 @@ namespace UrnasBR
 
         private void btnInserirVotos_Click(object sender, EventArgs e)
         {
-
+            inserirVotos tela = new inserirVotos();
+            this.Close();
+            MenuPrincipal = new Thread(abrirInserirVotos);
+            MenuPrincipal.SetApartmentState(ApartmentState.STA);
+            MenuPrincipal.Start();
         }
 
         private void btnVisualizarEleicoes_Click(object sender, EventArgs e)
         {
-
+            visualizarEleicoes tela = new visualizarEleicoes();
+            this.Close();
+            MenuPrincipal = new Thread(abrirVisualizarEleicoes);
+            MenuPrincipal.SetApartmentState(ApartmentState.STA);
+            MenuPrincipal.Start();
         }
 
         private void btnVisualizarPartidos_Click(object sender, EventArgs e)
@@ -96,6 +104,16 @@ namespace UrnasBR
         {
             Application.Run(new visualizarCandidatos());
         }
-        
+
+        private void abrirInserirVotos(object obj)
+        {
+            Application.Run(new inserirVotos());
+        }
+
+        private void abrirVisualizarEleicoes(object obj)
+        {
+            Application.Run(new visualizarEleicoes());
+        }
+
     }
 }

@@ -74,17 +74,19 @@
             // 
             // btnVoltar
             // 
+            this.btnVoltar.BackColor = System.Drawing.Color.Black;
+            this.btnVoltar.ForeColor = System.Drawing.Color.White;
             this.btnVoltar.Location = new System.Drawing.Point(12, 415);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(75, 23);
             this.btnVoltar.TabIndex = 2;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnEditarPartido
             // 
-            this.btnEditarPartido.Location = new System.Drawing.Point(492, 367);
+            this.btnEditarPartido.Location = new System.Drawing.Point(487, 367);
             this.btnEditarPartido.Name = "btnEditarPartido";
             this.btnEditarPartido.Size = new System.Drawing.Size(75, 23);
             this.btnEditarPartido.TabIndex = 3;

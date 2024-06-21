@@ -49,25 +49,26 @@ namespace UrnasBR
         {
             int[] idCandidatos = new int[0];
             int i = 0;
-            foreach(ListViewItem view in viewCandidatos.Items)
+            //Esta repetição é para armazenar o id dos candidatos
+            foreach (ListViewItem view in viewCandidatos.Items)
             {
                 Array.Resize(ref idCandidatos, idCandidatos.Length + 1);
                 idCandidatos[i] = int.Parse(view.SubItems[0].Text);
                 i++;
             }
-            if(idCandidatos.Length > 5 || idCandidatos.Length < 5)
-            {
-                MessageBox.Show("Insira 5 candidatos");
-                return;
-            }
+
+            Array.Resize(ref idCandidatos, idCandidatos.Length + 2);
+            idCandidatos[i] = 1;
+            idCandidatos[i + 1] = 2;
+
             try
             {
-                conexao.Inserir(nomeEleicao.Text,cargoEleicao.Text,idCandidatos);
+                conexao.Inserir(nomeEleicao.Text, cargoEleicao.Text, idCandidatos);
                 MessageBox.Show("Eleição cadastrada!");
                 nomeEleicao.Text = "";
                 cargoEleicao.Text = "";
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

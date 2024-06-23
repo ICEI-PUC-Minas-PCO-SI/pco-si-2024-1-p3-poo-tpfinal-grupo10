@@ -8,7 +8,7 @@
 
 `Eixo: 5`
 
-##Objetivo:
+## Objetivo:
 Desenvolver um sistema de votação eletrônica focado inicialmente nas eleições municipais para Prefeito e Vereadores, seguindo a legislação eleitoral brasileira.
 
 * Funcionalidades do Sistema: 
@@ -17,7 +17,7 @@ Permitir a criação e o gerenciamento de eleições.
 Registrar partidos políticos e candidatos, associando-os às eleições correspondentes.
 * Entrada e Armazenamento de Votos
 Possibilitar a entrada de votos em lote através de arquivos.
-Gravar resultados e recuperar informações de eleições passadas usando arquivos-texto.
+Gravar resultados usando arquivos-texto.
 * Relatórios de Resultados
 Exibir um relatório completo da eleição com:
 Total de votos válidos, nulos e brancos.

@@ -8,7 +8,9 @@
 
 `Eixo: 5`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Sistema de Gerenciamento de Urnas Eletrônicas
+Objetivo:
+Desenvolver um sistema de votação eletrônica focado inicialmente nas eleições municipais para Prefeito e Vereadores, seguindo a legislação eleitoral brasileira.
 
 ## Integrantes
 

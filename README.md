@@ -24,7 +24,7 @@ Total de votos válidos, nulos e brancos.
 Resultados das eleições executivas e legislativas.
 
 ## Diagrama de Caso de Uso
-![DiagramaDeCasodeUso drawio](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-p3-poo-tpfinal-grupo10/assets/64965197/a2d93c1f-bffd-454e-b43d-3a3f27c38014)
+![DiagramaDeCasodeUso drawio (1)](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-p3-poo-tpfinal-grupo10/assets/64965197/c6cc8587-2dfe-4eae-b0d6-8ecc3916182d)
 
 
 ## Integrantes

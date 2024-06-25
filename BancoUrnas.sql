@@ -33,6 +33,29 @@ create table candidatos(
     constraint FK_cargoCandidato foreign key (cargo_candidato) references cargos(id_cargo)
 );
 
+create table eleicoes(
+	id_eleicao int auto_increment,
+    nome_eleicao varchar(45) unique,
+    id_cargo int not null,
+    constraint PK_idEleicao primary key (id_eleicao),
+    constraint FK_idCargo foreign key (id_cargo) references cargos(id_cargo)
+);
+
+create table votos(
+	id_eleicao int not null,
+	id_candidato int not null,
+    quant_votos int default 0,
+	constraint FK_idCandidato foreign key (id_candidato) references candidatos(id_candidato),
+    constraint FK_idEleicao foreign key (id_eleicao) references eleicoes(id_eleicao)
+);
+
+ALTER TABLE `urnasbr`.`eleicoes` 
+CHANGE COLUMN `votos_candidato1` `votos_candidato1` INT(11) NULL DEFAULT 0 ,
+CHANGE COLUMN `votos_candidato2` `votos_candidato2` INT(11) NULL DEFAULT 0 ,
+CHANGE COLUMN `votos_candidato3` `votos_candidato3` INT(11) NULL DEFAULT 0 ,
+CHANGE COLUMN `votos_candidato4` `votos_candidato4` INT(11) NULL DEFAULT 0 ,
+CHANGE COLUMN `votos_candidato5` `votos_candidato5` INT(11) NULL DEFAULT 0 ;
+
 -- Insert do Tipo de cargo
 INSERT INTO tipoCargo(id_tipo, descricao) values (1,"Executivo");
 INSERT INTO tipoCargo(id_tipo, descricao) values (2,"Legislativo");
@@ -44,3 +67,11 @@ INSERT INTO cargos(descricao_cargo,tipo_cargo) values ("Prefeito",1);
 INSERT INTO cargos(descricao_cargo,tipo_cargo) values ("Deputado Estadual",2);
 INSERT INTO cargos(descricao_cargo,tipo_cargo) values ("Deputado Federal",2);
 INSERT INTO cargos(descricao_cargo,tipo_cargo) values ("Vereador",2);
+INSERT INTO cargos(descricao_cargo,tipo_cargo) values ("Nenhum",2);
+
+-- Insert partido TRE
+INSERT INTO partidos(nome_partido, sigla, presidente_partido) VALUES ('Tribunal Regional Eleitoral', 'TRE', 'Octavio Augusto');
+
+-- Insert nulo e branco
+INSERT INTO candidatos(nome_candidato, cpf_candidato, naturalidade_candidato, partido_candidato, cargo_candidato) VALUES ('VOTOS EM BRANCO', '00000000', 'XXXXXX', 1, 7);
+INSERT INTO candidatos(nome_candidato, cpf_candidato, naturalidade_candidato, partido_candidato, cargo_candidato) VALUES ('VOTOS NULOS', '00000000', 'XXXXXX', 1, 7);

@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/U2JBmGZJ)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15192511&assignment_repo_type=AssignmentRepo)
-# Título do Projeto
+# Sistema de Gerenciamento de Urnas Eletrônicas
 
 `CURSO: Sistemas de Informação`
 
@@ -8,7 +8,24 @@
 
 `Eixo: 5`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+## Objetivo:
+Desenvolver um sistema de votação eletrônica focado inicialmente nas eleições municipais para Prefeito e Vereadores, seguindo a legislação eleitoral brasileira.
+
+* Funcionalidades do Sistema: 
+Cadastro de Eleições, Partidos e Candidatos
+Permitir a criação e o gerenciamento de eleições.
+Registrar partidos políticos e candidatos, associando-os às eleições correspondentes.
+* Entrada e Armazenamento de Votos
+Possibilitar a entrada de votos em lote através de arquivos.
+Gravar resultados usando arquivos-texto.
+* Relatórios de Resultados
+Exibir um relatório completo da eleição com:
+Total de votos válidos, nulos e brancos.
+Resultados das eleições executivas e legislativas.
+
+## Diagrama de Caso de Uso
+![DiagramaDeCasodeUso drawio (1)](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-p3-poo-tpfinal-grupo10/assets/64965197/c6cc8587-2dfe-4eae-b0d6-8ecc3916182d)
+
 
 ## Integrantes
 

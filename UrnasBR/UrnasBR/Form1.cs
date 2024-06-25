@@ -1,4 +1,19 @@
+/*using MySql.Data.MySqlClient;
+using System.Reflection.Metadata;
+using System.Threading;*/
+
 using System.Threading;
+using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
+using System.Threading;
+using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Microsoft.VisualBasic.ApplicationServices;
+using MySql.Data.MySqlClient;
+using UrnasBR.Classes.ClassesConexaoBanco;
 
 namespace UrnasBR
 {
@@ -6,6 +21,7 @@ namespace UrnasBR
     {
         //Onde está Form1 é a tela de menu principal
         Thread MenuPrincipal;
+        ConexaoEleicoes conexao = new ConexaoEleicoes();
         public Form1()
         {
             InitializeComponent();
@@ -89,17 +105,17 @@ namespace UrnasBR
         {
             Application.Run(new cadastroCandidato());
         }
-        
+
         private void abrirCadastroEleicoes(object obj)
         {
             Application.Run(new CadastroEleicoes());
         }
-        
+
         private void abrirVisualizarPartidos(object obj)
         {
             Application.Run(new visualizarPartidos());
         }
-        
+
         private void abrirVisualizarCandidatos(object obj)
         {
             Application.Run(new visualizarCandidatos());
@@ -115,5 +131,69 @@ namespace UrnasBR
             Application.Run(new visualizarEleicoes());
         }
 
+        private void btnRelatorio_Click(object sender, EventArgs e)
+        {
+            // Defina o caminho onde o PDF será salvo
+            string path = @"C:\Users\vinic\OneDrive\Área de Trabalho";
+
+            // Cria um documento PDF
+            Document document = new Document();
+
+            try
+            {
+                // Cria um escritor que direciona o documento para um arquivo
+                PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(path, FileMode.Create));
+
+                // Abre o documento para escrita
+                document.Open();
+
+                // Adiciona um título ao documento
+                document.Add(new Paragraph("Relatório de Candidatos\n"));
+
+                // Adiciona uma linha em branco
+                document.Add(new Paragraph("\n"));
+
+                // Adiciona uma tabela com 3 colunas
+                PdfPTable table = new PdfPTable(3);
+                table.AddCell("Nome do Candidato");
+                table.AddCell("Partido");
+                table.AddCell("Número de Votos");
+
+                // Conexão com o banco de dados MySQL
+                string connectionString = "datasource=localhost;username=root;password=;database=urnasbr";
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "SELECT candidatos.id_candidato, nome_candidato, partido_candidato, votos.quant_votos FROM candidatos JOIN votos on candidatos.id_candidato = votos.id_candidato";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                table.AddCell(reader["nome_candidato"].ToString());
+                                table.AddCell(conexao.conferirPartido((int)reader["partido_candidato"]));
+                                table.AddCell(reader["quant_votos"].ToString());
+                            }
+                        }
+                    }
+                }
+
+                // Adiciona a tabela ao documento
+                document.Add(table);
+
+                MessageBox.Show("PDF gerado com sucesso em " + path);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao gerar PDF: " + ex.Message);
+            }
+            finally
+            {
+                // Fecha o documento
+                document.Close();
+            }
+
+        }
     }
 }

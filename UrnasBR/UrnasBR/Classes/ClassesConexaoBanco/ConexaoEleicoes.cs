@@ -132,7 +132,7 @@ namespace UrnasBR.Classes.ClassesConexaoBanco
             FecharConexao();
         }
 
-        private string conferirPartido(int _partido)
+        public string conferirPartido(int _partido)
         {
             string sql = $"SELECT nome_partido FROM partidos WHERE id = {_partido};";
             AbrirConexao();

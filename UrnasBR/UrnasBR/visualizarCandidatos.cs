@@ -29,12 +29,12 @@ namespace UrnasBR
             viewCandidatos.GridLines = true;
 
             //Estas são as colunas com suas legendas
-            viewCandidatos.Columns.Add("Código", 112, HorizontalAlignment.Left);
-            viewCandidatos.Columns.Add("Nome", 112, HorizontalAlignment.Left);
-            viewCandidatos.Columns.Add("CPF", 112, HorizontalAlignment.Left);
-            viewCandidatos.Columns.Add("Naturalidade", 112, HorizontalAlignment.Left);
-            viewCandidatos.Columns.Add("Partido", 112, HorizontalAlignment.Left);
-            viewCandidatos.Columns.Add("Cargo", 112, HorizontalAlignment.Left);
+            viewCandidatos.Columns.Add("Código", 128, HorizontalAlignment.Left);
+            viewCandidatos.Columns.Add("Nome", 128, HorizontalAlignment.Left);
+            viewCandidatos.Columns.Add("CPF", 128, HorizontalAlignment.Left);
+            viewCandidatos.Columns.Add("Naturalidade", 128, HorizontalAlignment.Left);
+            viewCandidatos.Columns.Add("Partido", 128, HorizontalAlignment.Left);
+            viewCandidatos.Columns.Add("Cargo", 128, HorizontalAlignment.Left);
 
             try
             {

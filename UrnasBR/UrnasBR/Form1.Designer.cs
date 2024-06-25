@@ -42,9 +42,10 @@
             this.btnCadastroEleicoes.BackColor = System.Drawing.Color.Black;
             this.btnCadastroEleicoes.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCadastroEleicoes.ForeColor = System.Drawing.Color.White;
-            this.btnCadastroEleicoes.Location = new System.Drawing.Point(96, 75);
+            this.btnCadastroEleicoes.Location = new System.Drawing.Point(110, 100);
+            this.btnCadastroEleicoes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCadastroEleicoes.Name = "btnCadastroEleicoes";
-            this.btnCadastroEleicoes.Size = new System.Drawing.Size(223, 58);
+            this.btnCadastroEleicoes.Size = new System.Drawing.Size(255, 77);
             this.btnCadastroEleicoes.TabIndex = 0;
             this.btnCadastroEleicoes.Text = "Cadastrar Eleições";
             this.btnCadastroEleicoes.UseVisualStyleBackColor = false;
@@ -55,9 +56,10 @@
             this.btnCadastroPartido.BackColor = System.Drawing.Color.Black;
             this.btnCadastroPartido.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCadastroPartido.ForeColor = System.Drawing.Color.White;
-            this.btnCadastroPartido.Location = new System.Drawing.Point(96, 148);
+            this.btnCadastroPartido.Location = new System.Drawing.Point(110, 197);
+            this.btnCadastroPartido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCadastroPartido.Name = "btnCadastroPartido";
-            this.btnCadastroPartido.Size = new System.Drawing.Size(223, 58);
+            this.btnCadastroPartido.Size = new System.Drawing.Size(255, 77);
             this.btnCadastroPartido.TabIndex = 1;
             this.btnCadastroPartido.Text = "Cadastrar Partido";
             this.btnCadastroPartido.UseVisualStyleBackColor = false;
@@ -68,9 +70,10 @@
             this.btnCadastroCandidato.BackColor = System.Drawing.Color.Black;
             this.btnCadastroCandidato.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCadastroCandidato.ForeColor = System.Drawing.Color.White;
-            this.btnCadastroCandidato.Location = new System.Drawing.Point(96, 225);
+            this.btnCadastroCandidato.Location = new System.Drawing.Point(110, 300);
+            this.btnCadastroCandidato.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCadastroCandidato.Name = "btnCadastroCandidato";
-            this.btnCadastroCandidato.Size = new System.Drawing.Size(223, 58);
+            this.btnCadastroCandidato.Size = new System.Drawing.Size(255, 77);
             this.btnCadastroCandidato.TabIndex = 2;
             this.btnCadastroCandidato.Text = "Cadastrar Candidato";
             this.btnCadastroCandidato.UseVisualStyleBackColor = false;
@@ -81,9 +84,10 @@
             this.btnInserirVotos.BackColor = System.Drawing.Color.Black;
             this.btnInserirVotos.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnInserirVotos.ForeColor = System.Drawing.Color.White;
-            this.btnInserirVotos.Location = new System.Drawing.Point(96, 308);
+            this.btnInserirVotos.Location = new System.Drawing.Point(110, 411);
+            this.btnInserirVotos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnInserirVotos.Name = "btnInserirVotos";
-            this.btnInserirVotos.Size = new System.Drawing.Size(223, 58);
+            this.btnInserirVotos.Size = new System.Drawing.Size(255, 77);
             this.btnInserirVotos.TabIndex = 3;
             this.btnInserirVotos.Text = "Inserir Votos";
             this.btnInserirVotos.UseVisualStyleBackColor = false;
@@ -94,9 +98,10 @@
             this.btnVisualizarEleicoes.BackColor = System.Drawing.Color.Black;
             this.btnVisualizarEleicoes.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnVisualizarEleicoes.ForeColor = System.Drawing.Color.White;
-            this.btnVisualizarEleicoes.Location = new System.Drawing.Point(487, 120);
+            this.btnVisualizarEleicoes.Location = new System.Drawing.Point(557, 160);
+            this.btnVisualizarEleicoes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnVisualizarEleicoes.Name = "btnVisualizarEleicoes";
-            this.btnVisualizarEleicoes.Size = new System.Drawing.Size(223, 58);
+            this.btnVisualizarEleicoes.Size = new System.Drawing.Size(255, 77);
             this.btnVisualizarEleicoes.TabIndex = 4;
             this.btnVisualizarEleicoes.Text = "Visualizar Eleições";
             this.btnVisualizarEleicoes.UseVisualStyleBackColor = false;
@@ -107,9 +112,10 @@
             this.btnVisualizarPartidos.BackColor = System.Drawing.Color.Black;
             this.btnVisualizarPartidos.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnVisualizarPartidos.ForeColor = System.Drawing.Color.White;
-            this.btnVisualizarPartidos.Location = new System.Drawing.Point(487, 193);
+            this.btnVisualizarPartidos.Location = new System.Drawing.Point(557, 257);
+            this.btnVisualizarPartidos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnVisualizarPartidos.Name = "btnVisualizarPartidos";
-            this.btnVisualizarPartidos.Size = new System.Drawing.Size(223, 58);
+            this.btnVisualizarPartidos.Size = new System.Drawing.Size(255, 77);
             this.btnVisualizarPartidos.TabIndex = 5;
             this.btnVisualizarPartidos.Text = "Visualizar Partidos";
             this.btnVisualizarPartidos.UseVisualStyleBackColor = false;
@@ -120,9 +126,10 @@
             this.btnVisualizarCandidatos.BackColor = System.Drawing.Color.Black;
             this.btnVisualizarCandidatos.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnVisualizarCandidatos.ForeColor = System.Drawing.Color.White;
-            this.btnVisualizarCandidatos.Location = new System.Drawing.Point(487, 270);
+            this.btnVisualizarCandidatos.Location = new System.Drawing.Point(557, 360);
+            this.btnVisualizarCandidatos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnVisualizarCandidatos.Name = "btnVisualizarCandidatos";
-            this.btnVisualizarCandidatos.Size = new System.Drawing.Size(223, 58);
+            this.btnVisualizarCandidatos.Size = new System.Drawing.Size(255, 83);
             this.btnVisualizarCandidatos.TabIndex = 6;
             this.btnVisualizarCandidatos.Text = "Visualizar Candidatos";
             this.btnVisualizarCandidatos.UseVisualStyleBackColor = false;
@@ -130,10 +137,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.btnVisualizarCandidatos);
             this.Controls.Add(this.btnVisualizarPartidos);
             this.Controls.Add(this.btnVisualizarEleicoes);
@@ -141,6 +148,7 @@
             this.Controls.Add(this.btnCadastroCandidato);
             this.Controls.Add(this.btnCadastroPartido);
             this.Controls.Add(this.btnCadastroEleicoes);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
